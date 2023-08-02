@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  font-size: 40px;
+}
+@media screen and (max-width: 700px) {
+  .container h1 {
+    font-size: 30px;
+  }
+}
+.container .facts {
+  padding: 20px;
+}
+.container .facts .fact {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.128);
+  transition: all 0.8s;
+  margin-bottom: 15px;
+}
+.container .facts .fact:hover {
+  border-radius: 10px;
+}
+.container .facts .fact .cardHead {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.8s;
+  padding: 20px;
+}
+.container .facts .fact .cardHead:hover {
+  border-radius: 10px;
+  background-color: rgb(34, 33, 33);
+  color: white;
+}
+.container .facts .fact .tog {
+  width: 12px;
+}
+.container .facts .fact .plus {
+  display: none;
+}
+.container .facts .fact .minus {
+  display: none;
+}
+.container .facts .fact .cardInfo {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  border-radius: 10px;
+  background-color: rgb(222, 218, 211);
+  justify-content: space-between;
+  transition: all 0.7s;
+}
+@media screen and (max-width: 700px) {
+  .container .facts .fact .cardInfo {
+    flex-direction: column-reverse;
+  }
+}
+.container .facts .fact .cardInfo .info {
+  width: 60%;
+  font-size: 25px;
+}
+@media screen and (max-width: 700px) {
+  .container .facts .fact .cardInfo .info {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+.container .facts .fact .cardInfo .img {
+  width: 300px;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+@media screen and (max-width: 700px) {
+  .container .facts .fact .cardInfo .img {
+    width: 70%;
+    margin: auto;
+  }
+}
+.container .facts .fact .cardInfo .img img {
+  border-radius: 10px;
+  width: 100%;
+}
+.container .facts .logo {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.8s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.128);
+}
+.container .facts .logo:hover {
+  background-color: rgb(34, 33, 33);
+  border-radius: 10px;
+}
+.container .facts .logo:hover .logos {
+  transform: rotateY(360deg);
+}
+.container .facts .logo:hover .logos .logo2 {
+  opacity: 0;
+}
+.container .facts .logo .logos {
+  position: relative;
+  transition: all 0.8s;
+  width: 40px;
+}
+.container .facts .logo .logo1 {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  transition: all 0.8s;
+}
+.container .facts .logo .logo2 {
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+  top: 5px;
+  width: 100%;
+}
+
+.active {
+  display: block !important;
+}
+
+.cardActive {
+  height: 300px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  padding: 20px !important;
+}
+@media screen and (max-width: 700px) {
+  .cardActive {
+    height: 450px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
